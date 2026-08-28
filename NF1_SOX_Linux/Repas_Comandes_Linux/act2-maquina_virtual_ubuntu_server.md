@@ -16,8 +16,7 @@ Aquesta màquina haurà de **seguir estrictament** els requeriments que trobareu
 
 Aquest és el primer pas per convertir-vos en **superherois dels sistemes**. 🦸‍♂️🦸‍♀️
 
-> **[Imatge / element visual]**
-> NF1_SOX_Linux/Repas_Comandes_Linux/media/act2-img1.png
+![Profile Image](media/act2-img1.png)
 
 Un cop tingueu la màquina creada i correctament avaluada, creareu una **OVA** per tal de poder desplegar aquesta màquina virtual ràpidament quan la necessiteu.
 
