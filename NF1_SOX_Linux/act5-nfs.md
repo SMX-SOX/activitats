@@ -1,4 +1,4 @@
-# T09: Servidor de fitxers Linux — NFS
+# T0X: Servidor de fitxers Linux — NFS
 
 ## Tasca individual
 
