@@ -119,7 +119,9 @@ Documenta amb captures de pantalla i explicacions els següents passos:
 
    - Configura l'idioma amb la comanda `sudo dpkg-reconfigure locales`. Mostra les captures de pantalla i explica els passos que has seguit.
 
-7. Exportar la màquina virtual
+7. Explorant arxius de configuració
+
+8. Exportar la màquina virtual
 
    - Exporta la màquina virtual a un fitxer amb extensió `.ova`. Mostra les captures de pantalla i explica els passos que has seguit. Una vegada finalitzat el procés, copia't el fitxer al teu disc extraïble.
 
