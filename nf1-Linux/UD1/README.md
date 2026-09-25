@@ -8,7 +8,7 @@ Què caldrà fer?
 
 Crear una màquina virtual amb Ubuntu Server. Utilitzarem la versió LTS més recent. Aquesta màquina haurà de seguir estrictament els requeriments que trobareu a continuació. En cas contrari, l'avaluació serà negativa. Aquest és el primer pas per convertir-vos en superherois dels sistemes.
 
-![Learning Linux](./img/ud1-img1.png)
+![Ubuntu Server](./img/ud1-img1.png)
 
 ### Durada de l'activitat
 
@@ -16,36 +16,37 @@ La durada prevista de l'activitat és 4 hores a classe.
 
 ### Objectius específics de l'activitat
 
-- Repassar les comandes bàsiques relacionades amb el sistema d'arxius.
-- Repassar la gestió d'usuaris i grups.
-- Repassar les accions relacionades amb la propietat i els permisos.
+- Instal·lar un sistema operatiu sense entorn gràfic.
+- Interpretar correctament les instruccions d'instal·lació.
 
 ### Competències treballades
 
-g) Realitzar les proves funcionals en sistemes microinformàtics i xarxes locals, localitzant i diagnosticant disfuncions, per comprovar i ajustar el seu funcionament.
-
-o) Utilitzar els mitjans de consulta disponibles, seleccionant-ne el més adequat en cada cas, per resoldre en temps raonable supòsits no coneguts i dubtes professionals.
+a) Determinar la logística associada a les operacions d'instal·lació, configuració i manteniment de sistemes microinformàtics, interpretant-ne la documentació tècnica associada i organitzant els recursos necessaris.
 
 ### Resultats d'aprenentatge i criteris d'avaluació
 
-0222-RA3. Realitza tasques bàsiques de configuració de sistemes operatius, interpretant-ne requeriments i descrivint-ne els procediments seguits.
+RA1. Instal·la sistemes operatius en xarxa descrivint-ne les característiques i interpretant-ne la documentació tècnica.
 
-0222-RA4. Realitza operacions bàsiques d'administració de sistemes operatius, interpretant requeriments i optimitzant el sistema per al seu ús.
-
-0222-RA5. Crea màquines virtuals identificant-ne el camp d'aplicació i instal·lant-hi programari específic.
-
-En ser una activitat de repàs, no hi ha criteris d'avaluació específics. No obstant això, es valorarà la participació i implicació en la resolució de les activitats.
+1.1 Realitza l'estudi de compatibilitat del sistema informàtic.
+1.2 Diferencia els modes d'instal·lació.
+1.3 Planifica i realitza el particionat del disc del servidor.
+1.4 Selecciona i aplica els sistemes d'arxius.
+1.5 Selecciona els components a instal·lar.
+1.6 Actualitza el sistema operatiu en xarxa.
 
 ### Continguts
 
-- Realització de tasques bàsiques sobre sistemes operatius lliures i propietaris.
-- Administració dels sistemes operatius.
-- Configuració de màquines virtuals.
+1. Instal·lació de sistemes operatius en xarxa
+ 1.1 Comprovació dels requisits tècnics. Preparació de la instal·lació.
+ 1.2 Particions i sistema d'arxius. Components i mètodes.
+ 1.4 Elaboració de la documentació sobre la instal·lació i les incidències.
+ 1.5 Instal·lació de sistemes operatius en xarxa en màquines virtuals.
 
 ### Capacitats clau treballades
 
+- Autonomia
+- Organització del treball
 - Responsabilitat
-- Resolució de problemes
 
 ### Semàfor ús de la IA
 
@@ -57,61 +58,39 @@ Condicions: Cal processar, entendre i validar sempre els resultats rebuts. Està
 
 ## Enunciat de l'activitat
 
-### Indicacions
+Cal que instal·leu un Ubuntu Server 26.04 LTS en una màquina virtual, en el cas de classe serà VirtualBox, si feu l'activitat a casa podeu utilitzar qualsevol altre programari de virtualització.
 
-![ud1](./img/ud1-img1.png)
+L'arxiu .ISO del sistema operatiu el trobareu a la unitat de xarxa, dins la carpeta `ISOs`. També el podeu descarregar des de la [pàgina oficial d'Ubuntu](https://ubuntu.com/download/server), tot i que a la classe no es recomana perquè pot trigar força temps.
 
-Al llarg d'aquest segon curs veurem comandes noves per resoldre accions que, de moment, no han estat necessàries. Però entendre bé com moure's pel sistema d'arxius, interactuar amb arxius i carpetes, gestionar els permisos i la propietat dels objectes, saber administrar usuaris i grups i gestionar aplicacions serà imprescindible al llarg dels diferents projectes.
+### Requisits de la màquina virtual
 
-Per aquest motiu, començarem repassant les comandes i accions bàsiques. Disposeu d'unes activitats que us serviran per repassar aquests continguts.
+La màquina virtual haurà de complir obligatòriament els requisits següents:
 
-> **L'objectiu no és lliurar les activitats.** Les solucionarem conjuntament al final de la primera setmana.
+- Memòria RAM: 4 GB.
+- Processador: 4 nuclis.
+- Disc dur: 20 GB.
+- Dos adaptadors de xarxa:
+  - Xarxa NAT.
+  - host-only (per poder accedir a la màquina virtual des de l'ordinador host).
+- Usuari i contrasenya: `usuari` / `usuari` (sense cometes).
+- Instal·la el servei SSH durant la instal·lació del sistema operatiu. Això ens permetrà connectar-nos a la màquina virtual des de l'ordinador host des del terminal.
 
-### Durade l'activitat
+### Documentació de la instal·lació
 
-La durada prevista de l'activitat és 2 hores a classe.
+A més de crear la màquina virtual, haureu d'elaborar una guia d'instal·lació en què documentareu correctament les diferents accions, configuracions i decisions preses durant el procés.
 
-### Objectius específics de l'activitat
+Penseu que documentar correctament una instal·lació és fonamental per evitar errors i facilitar posteriors desplegaments o configuracions.
 
-- Repassar les comandes bàsiques relacionades amb el sistema d'arxius.
-- Repassar la gestió d'usuaris i grups.
-- Repassar les accions relacionades amb la propietat i els permisos.
+> ### 📚 El lema d'aquest curs és
+>
+> ***«Documentar, documentar i documentar.»***
 
-### Competències treballades
+### Què cal lliurar?
 
-g) Realitzar les proves funcionals en sistemes microinformàtics i xarxes locals, localitzant i diagnosticant disfuncions, per comprovar i ajustar el seu funcionament.
+Lliureu la guia d'instal·lació amb les captures i explicacions necessàries a la tasca del Moodle corresponent.
 
-o) Utilitzar els mitjans de consulta disponibles, seleccionant-ne el més adequat en cada cas, per resoldre en temps raonable supòsits no coneguts i dubtes professionals.
+## Material de suport
 
-### Resultats d'aprenentatge i criteris d'avaluació
+- [NF1.UD1. Instal·lació Ubuntu Server](https://smx-sox.github.io/Materials/NF1_SOX_Linux/UD1-Instal%C2%B7laci%C3%B3/)
 
-0222-RA3. Realitza tasques bàsiques de configuració de sistemes operatius, interpretant-ne requeriments i descrivint-ne els procediments seguits.
-
-0222-RA4. Realitza operacions bàsiques d'administració de sistemes operatius, interpretant requeriments i optimitzant el sistema per al seu ús.
-
-0222-RA5. Crea màquines virtuals identificant-ne el camp d'aplicació i instal·lant-hi programari específic.
-
-En ser una activitat de repàs, no hi ha criteris d'avaluació específics. No obstant això, es valorarà la participació i implicació en la resolució de les activitats.
-
-### Continguts
-
-- Realització de tasques bàsiques sobre sistemes operatius lliures i propietaris.
-- Administració dels sistemes operatius.
-- Configuració de màquines virtuals.
-
-### Capacitats clau treballades
-
-- Responsabilitat
-- Resolució de problemes
-
-### Semàfor ús de la IA
-
-🟠 Aquesta activitat permet un ús parcial o restringit.
-
-Permès per com a eina de suport en la millora de la redacció dels informes, cerca preliminar d'informació, estructuració d'idees o explicació de conceptes teòrics complexos.
-
-Condicions: Cal processar, entendre i validar sempre els resultats rebuts. Està totalment prohibit copiar l'enunciat d'un exercici directament al xat de la IA i enganxar la resposta generada per al lliurament final sense treball propi ni anàlisi crítica.
-
-## Enunciat de l'activitat
-
-### Indicacions
+- [Documentació oficial d'Ubuntu Server](https://ubuntu.com/server/docs)
