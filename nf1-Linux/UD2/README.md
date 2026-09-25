@@ -105,7 +105,23 @@ Documenta amb captures de pantalla i explicacions els següents passos:
 
    - Executa la comanda `passwd` i canvia la contrasenya de l'usuari `usuari` que has creat a la màquina virtual, posa un triat per tu.
 
-5. Instal·lació d'aplicacions
+5. Gestió de la instal·lació d'aplicacions
+
+   - Mostra la informació disponible de l'aplicació `htop` amb la comanda `apt show htop`. Explica què és i per a què serveix.
+
+   - Instal·la l'aplicació `htop` amb la comanda `sudo apt install htop`. Mostra les captures de pantalla i explica els passos que has seguit.
+
+6. Configuracions hora, teclat i idioma
+
+   - Configura la zona horària amb la comanda `sudo timedatectl set-timezone Europe/Madrid`. Mostra les captures de pantalla i explica els passos que has seguit.
+
+   - Configura el teclat amb la comanda `sudo dpkg-reconfigure keyboard-configuration`. Mostra les captures de pantalla i explica els passos que has seguit.
+
+   - Configura l'idioma amb la comanda `sudo dpkg-reconfigure locales`. Mostra les captures de pantalla i explica els passos que has seguit.
+
+7. Exportar la màquina virtual
+
+   - Exporta la màquina virtual a un fitxer amb extensió `.ova`. Mostra les captures de pantalla i explica els passos que has seguit. Una vegada finalitzat el procés, copia't el fitxer al teu disc extraïble.
 
 ### Què cal lliurar?
 
