@@ -8,7 +8,7 @@ De fet, en el món real, els servidors no són equips amb els quals interactuem 
 
 Per aquest motiu, és important que dominem algunes de les comandes bàsiques de Linux que ja vam estudiar el curs passat.
 
-![Learning Linux](./img/learning_tux.png)
+![ud1](./img/)
 
 Al llarg d'aquest segon curs veurem comandes noves per resoldre accions que, de moment, no han estat necessàries. Però entendre bé com moure's pel sistema d'arxius, interactuar amb arxius i carpetes, gestionar els permisos i la propietat dels objectes, saber administrar usuaris i grups i gestionar aplicacions serà imprescindible al llarg dels diferents projectes.
 
@@ -16,42 +16,43 @@ Per aquest motiu, començarem repassant les comandes i accions bàsiques. Dispos
 
 > **L'objectiu no és lliurar les activitats.** Les solucionarem conjuntament al final de la primera setmana.
 
-### Durade l'activitat
+### Durada de l'activitat
 
 La durada prevista de l'activitat és 2 hores a classe.
 
 ### Objectius específics de l'activitat
 
-- Repassar les comandes bàsiques relacionades amb el sistema d'arxius.
-- Repassar la gestió d'usuaris i grups.
-- Repassar les accions relacionades amb la propietat i els permisos.
+- Instal·lar un sistema operatiu sense entorn gràfic.
+- Interpretar correctament les instruccions d'instal·lació.
 
 ### Competències treballades
 
-g) Realitzar les proves funcionals en sistemes microinformàtics i xarxes locals, localitzant i diagnosticant disfuncions, per comprovar i ajustar el seu funcionament.
-
-o) Utilitzar els mitjans de consulta disponibles, seleccionant-ne el més adequat en cada cas, per resoldre en temps raonable supòsits no coneguts i dubtes professionals.
+a) Determinar la logística associada a les operacions d'instal·lació, configuració i manteniment de sistemes microinformàtics, interpretant-ne la documentació tècnica associada i organitzant els recursos necessaris.
 
 ### Resultats d'aprenentatge i criteris d'avaluació
 
-0222-RA3. Realitza tasques bàsiques de configuració de sistemes operatius, interpretant-ne requeriments i descrivint-ne els procediments seguits.
+RA1. Instal·la sistemes operatius en xarxa descrivint-ne les característiques i interpretant-ne la documentació tècnica.
 
-0222-RA4. Realitza operacions bàsiques d'administració de sistemes operatius, interpretant requeriments i optimitzant el sistema per al seu ús.
-
-0222-RA5. Crea màquines virtuals identificant-ne el camp d'aplicació i instal·lant-hi programari específic.
-
-En ser una activitat de repàs, no hi ha criteris d'avaluació específics. No obstant això, es valorarà la participació i implicació en la resolució de les activitats.
+1.1 Realitza l'estudi de compatibilitat del sistema informàtic.
+1.2 Diferencia els modes d'instal·lació.
+1.3 Planifica i realitza el particionat del disc del servidor.
+1.4 Selecciona i aplica els sistemes d'arxius.
+1.5 Selecciona els components a instal·lar.
+1.6 Actualitza el sistema operatiu en xarxa.
 
 ### Continguts
 
-- Realització de tasques bàsiques sobre sistemes operatius lliures i propietaris.
-- Administració dels sistemes operatius.
-- Configuració de màquines virtuals.
+1. Instal·lació de sistemes operatius en xarxa
+ 1.1 Comprovació dels requisits tècnics. Preparació de la instal·lació.
+ 1.2 Particions i sistema d'arxius. Components i mètodes.
+ 1.4 Elaboració de la documentació sobre la instal·lació i les incidències.
+ 1.5 Instal·lació de sistemes operatius en xarxa en màquines virtuals.
 
 ### Capacitats clau treballades
 
+- Autonomia
+- Organització del treball
 - Responsabilitat
-- Resolució de problemes
 
 ### Semàfor ús de la IA
 
@@ -63,44 +64,39 @@ Condicions: Cal processar, entendre i validar sempre els resultats rebuts. Està
 
 ## Enunciat de l'activitat
 
-### Indicacions
+Cal que instal·leu un Ubuntu Server 26.04 LTS en una màquina virtual, en el cas de classe serà VirtualBox, si feu l'activitat a casa podeu utilitzar qualsevol altre programari de virtualització.
 
-Executa els següents exercicis en una màquina virtual amb GNU/Linux usant el terminal. Per a cada exercici, escriu la comanda o seqüència de comandes que faries i comprova que el resultat sigui correcte.
+L'arxiu .ISO del sistema operatiu el trobareu a la unitat de xarxa, dins la carpeta `ISOs`. També el podeu descarregar des de la [pàgina oficial d'Ubuntu](https://ubuntu.com/download/server), tot i que a la classe no es recomana perquè pot trigar força temps.
 
-Descarrega't l'arxiu `ubuntu.ova` de la carpeta de xarxa i importa-la a VirtualBox. Inicia la màquina virtual i accedeix-hi amb l'usuari `usuari` i la contrasenya `usuari`.
+### Requisits de la màquina virtual
 
-### Bloc 1: Sistema de fitxers
+La màquina virtual haurà de complir obligatòriament els requisits següents:
 
-1. Llista tots els fitxers i carpetes (amb detalls i fitxers ocults) dins del directori `/home`.
+- Memòria RAM: 4 GB.
+- Processador: 4 nuclis.
+- Disc dur: 20 GB.
+- Dos adaptadors de xarxa:
+  - Xarxa NAT.
+  - host-only (per poder accedir a la màquina virtual des de l'ordinador host).
+- Usuari i contrasenya: `usuari` / `usuari` (sense cometes).
+- Instal·la el servei SSH durant la instal·lació del sistema operatiu. Això ens permetrà connectar-nos a la màquina virtual des de l'ordinador host des del terminal.
 
-2. Copia el fitxer `/etc/passwd` al teu directori personal i canvia el nom de l'arxiu copia a `users.txt`.
+### Documentació de la instal·lació
 
-3. Mou el fitxer `users.txt` dins una nova carpeta del teu usuari anomenada `documents`. Si no existeix, crea-la.
+A més de crear la màquina virtual, haureu d'elaborar una guia d'instal·lació en què documentareu correctament les diferents accions, configuracions i decisions preses durant el procés.
 
-4. Esborra el fitxer `users.txt` dins de `documents`.
+Penseu que documentar correctament una instal·lació és fonamental per evitar errors i facilitar posteriors desplegaments o configuracions.
 
-5. Crea tres carpetes noves dins del teu directori personal: `proves`, `proves2` i `proves3` d’una sola comanda.
+> ### 📚 El lema d'aquest curs és
+>
+> ***«Documentar, documentar i documentar.»***
 
-### Bloc 2: Usuaris i grups
+### Què cal lliurar?
 
-1. Crea dos usuaris nous anomenats `prova1` i `prova2` amb directori personal i shell /bin/bash.
+Lliureu la guia d'instal·lació amb les captures i explicacions necessàries a la tasca del Moodle corresponent.
 
-2. Crea un grup nou anomenat `alumnes`.
+## Material de suport
 
-3. Afegeix l’usuari `prova1` al grup `alumnes` i al grup que pot fer `sudo` (mantenint els grups que ja té).
+- [NF1.UD1. Instal·lació Ubuntu Server](https://smx-sox.github.io/Materials/NF1_SOX_Linux/UD1-Instal%C2%B7laci%C3%B3/)
 
-4. Mostra els grups dels que és membre `prova1`.
-
-5. Elimina l’usuari  `prova1` (esborrant el seu directori personal si n’hi hagués).
-
-### Bloc 3: Permisos i propietats
-
-1. Crea un fitxer anomenat `secret.txt` i treu tots els permisos per a “altres”. Comprova resultat amb comanda  `ls -l`.
-
-2. Canvia el propietari del fitxer `secret.txt` a l’usuari `prova2`. Comprova resultat amb comanda `ls -l`.
-
-3. Assigna el grup `alumnes` al fitxer `secret.txt`. Comprova resultat amb comanda `ls -l`.
-
-4. Fes que la carpeta `proves2` tingui com a propietari `prova2` i grup propietari `alumnes`. Comprova resultat amb comanda `ls -l`.
-
-5. Dona permisos a la carpeta `proves2` de manera que tant el propietari, com el grup propietari puguin llegir i escriure. La resta d’usuaris no tenen cap permís. Comprova resultat amb comanda `ls -l`.
+- [Documentació oficial d'Ubuntu Server](https://ubuntu.com/server/docs)
