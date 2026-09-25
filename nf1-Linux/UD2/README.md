@@ -6,6 +6,8 @@ En aquesta primera activitat ens centrarem a l'administració bàsica d'un servi
 
 El motiu, és doble, d'una banda, poder treballar des del terminal de l'equip Windows facilita la feina, i fa que accions com copiar i enganxar siguin més senzilles, i d'altra banda, ens acostuma a la manera de treballar amb servidors reals, que normalment són virtuals i es troben a centres de dades no accessibles físicament.
 
+![sox-ud2](./img/sox-ud2.png)
+
 Veurem les accions bàsiques d'administració: gestió paquets, actualització del sistema i les configuracions bàsiques: xarxa, hora, teclat, etc.
 
 Finalment, exportarem la nostra màquina virtual a un fitxer que podrem importar en altres equips, i que ens permetrà tenir una còpia de seguretat del nostre treball.
