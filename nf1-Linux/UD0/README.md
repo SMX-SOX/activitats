@@ -8,6 +8,8 @@ De fet, en el món real, els servidors no són equips amb els quals interactuem 
 
 Per aquest motiu, és important que dominem algunes de les comandes bàsiques de Linux que ja vam estudiar el curs passat.
 
+![Learning Linux](./img/learning_tux.png)
+
 Al llarg d'aquest segon curs veurem comandes noves per resoldre accions que, de moment, no han estat necessàries. Però entendre bé com moure's pel sistema d'arxius, interactuar amb arxius i carpetes, gestionar els permisos i la propietat dels objectes, saber administrar usuaris i grups i gestionar aplicacions serà imprescindible al llarg dels diferents projectes.
 
 Per aquest motiu, començarem repassant les comandes i accions bàsiques. Disposeu d'unes activitats que us serviran per repassar aquests continguts.
