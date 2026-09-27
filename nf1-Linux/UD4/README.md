@@ -12,5 +12,5 @@ Vosaltres, com a tècnics de sistemes júniors, sereu els encarregats de despleg
 
 Aquesta repte el dividirem en dues activitats:
 
-- [A1. Compartició de recursos amb NFS](A1-NFS.md)
-- [A2. Compartició de recursos amb CUPS](A2-CUPS.md)
+- [AA1. Compartició de recursos amb NFS](AA1-NFS.md)
+- [AA2. Compartició de recursos amb CUPS](AA2-CUPS.md)
