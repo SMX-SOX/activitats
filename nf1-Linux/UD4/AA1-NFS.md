@@ -60,6 +60,8 @@ Permès per com a eina de suport en la millora de la redacció dels informes, ce
 
 Condicions: Cal processar, entendre i validar sempre els resultats rebuts. Està totalment prohibit copiar l'enunciat d'un exercici directament al xat de la IA i enganxar la resposta generada per al lliurament final sense treball propi ni anàlisi crítica.
 
+---
+
 ## Enunciat de l'activitat
 
 ### Requeriments previs
@@ -141,7 +143,18 @@ El client necessita que el directori /srv/nfs/admin_tools sigui accessible per l
 
 ## Lliurament de l'activitat
 
-L'activitat en **format Markdown** al repositori de GitHub que s'indiqui per part del professorat.
+L'activitat en **format Markdown** al repositori de GitHub que s'indiqui per part del professorat. Amb la següent estructura de fitxers:
+
+```text
+.
+├── README.md
+├── AA1-NFS.md
+└── images/
+    ├── screenshot1.png
+    └── screenshot2.png
+```
+
+On `README.md` contindrà l'enunciat de l'activitat, `AA1-NFS.md` serà el fitxer principal amb la descripció de l'activitat i les captures de pantalla es guardaran a la carpeta `images/`.
 
 1. Documenta tot el procés seguint les fases descrites anteriorment. Per les comandes, escriu la comanda com un codi, això et permetrà copiar posteriorment amb facilitat. Per exemple:
 
@@ -149,10 +162,10 @@ L'activitat en **format Markdown** al repositori de GitHub que s'indiqui per par
    sudo apt update
    ```
 
-2. Inclou captures de pantalla dels passos més importants, especialment dels resultats que demostren el correcte funcionament. Les imatges han d'estar en format PNG i s'han d'incloure al directori `img` del repositori i tenir una resolució suficient, per exemple, 640 píxels d'amplada. Les imatges s'han d'inserir al document amb la sintaxi Markdown:
+2. Inclou captures de pantalla per demostrar el correcte funcionament de la prova de concepte. Per inserir una imatge en Markdown, utilitza la següent sintaxi:
 
    ```markdown
-   ![Descripció de la imatge](img/nom_de_la_imatge.png)
+   ![Descripció de la imatge](images/nom_de_la_imatge.png)
    ```
 
 3. Respon les preguntes plantejades en les diferents fases.

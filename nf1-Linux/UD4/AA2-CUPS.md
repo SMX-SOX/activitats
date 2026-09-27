@@ -2,27 +2,39 @@
 
 ## Presentació de l'activitat
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+Un cop assolit amb èxit el desplegament del servidor NFS, **Devoptimize Solutions** necessita la vostra proposta per centralitzar la impressió des de tots els equips.
+
+Abans d'invertir en impressores de xarxa, el client vol veure una Prova de Concepte (Proof of Concept, PoC) que demostri que un servidor Linux pot gestionar una impressora i compartir-la de manera transparent amb els clients Zorin OS.
+
+Per simular una impressora de xarxa sense necessitat d'adquirir maquinari físic, utilitzarem la impressora virtual **cups-pdf**. Aquesta eina funciona com una impressora convencional, però, en lloc d'imprimir el document en paper, genera un fitxer PDF que es desa al servidor.
+
+L'objectiu és configurar aquest escenari i demostrar que un client pot enviar correctament un treball d'impressió al servidor.
 
 ### Durada de l'activitat
 
-La durada prevista de l'activitat és x hores a classe.
+La durada prevista de l'activitat és 8 hores a classe.
 
 ### Objectius específics de l'activitat
 
-- Objectiu 1
-- Objectiu 2
-- Objectiu 3
+Configurar un servidor d'impressió utilitzant el protocol CUPS.
 
 ### Competències treballades
 
-a) Competència 1
+f) Instal·lar, configurar i mantenir serveis multiusuari, aplicacions i dispositius compartits en un entorn de xarxa local, atenent les necessitats i els requeriments especificats.
+
+g) Realitzar proves funcionals en sistemes microinformàtics i xarxes locals, localitzant i diagnosticant disfuncions per comprovar-ne i ajustar-ne el funcionament.
+
+o) Utilitzar els mitjans de consulta disponibles, seleccionant-ne el més adequat en cada cas, per resoldre en un temps raonable supòsits no coneguts i dubtes professionals.
 
 ### Resultats d'aprenentatge i criteris d'avaluació
 
-RAx.
+RA4. Gestiona els recursos compartits del sistema, interpretant especificacions i determinant nivells de seguretat.
+
+4.4 Comparteix impressores en xarxa.
 
 ### Continguts
+
+4.4 Configuració d'impressores compartides en xarxa.
 
 ### Capacitats clau treballades
 
@@ -42,26 +54,104 @@ Permès per com a eina de suport en la millora de la redacció dels informes, ce
 
 Condicions: Cal processar, entendre i validar sempre els resultats rebuts. Està totalment prohibit copiar l'enunciat d'un exercici directament al xat de la IA i enganxar la resposta generada per al lliurament final sense treball propi ni anàlisi crítica.
 
+---
+
 ## Enunciat de l'activitat
 
 ### Requeriments previs
 
-Cal que tingueu un servidor Linux (Ubuntu Server) instal·lat i configurat de l'activitat anterior. Cas que sigui necessari, torneu a desplegar el servidor a partir del fitxer `.OVA` que vau generar.
+Utilitzareu el mateix escenari configurat durant la **PoC de NFS**, de manera que podeu continuar treballant amb les mateixes màquines virtuals.
 
-### Què cal lliurar?
+Servidor: **Ubuntu Server** configurat amb:
 
-Lliureu la guia d'instal·lació amb les captures i explicacions necessàries a la tasca del Moodle corresponent.
+- Una interfície de xarxa en mode **NAT**.
+- Una segona interfície de xarxa en mode **Host-Only**.
 
-Per a cada apartat de l'activitat, la documentació hauria d'incloure, sempre que sigui necessari:
+Client: **Zorin OS Desktop**, amb una configuració de xarxa compatible amb la del servidor per permetre la comunicació entre ambdues màquines.
 
-1. **L'objectiu de l'acció.**
-2. **La comanda o configuració utilitzada.**
-3. **Una explicació del funcionament.**
-4. **Una captura de pantalla del resultat.**
-5. **Una breu conclusió o comprovació**, quan sigui necessari.
+### 1. Instal·lació de CUPS
 
-> ## 📚 Recordeu
->
-> **«Documentar, documentar i documentar.»**
+- Instal·leu el servei **CUPS** al servidor.
+
+- Documenteu les comandes utilitzades durant la instal·lació.
+
+### 2. Instal·lació de la impressora virtual
+
+- Instal·leu i configureu la impressora virtual `cups-pdf` al servidor.
+
+### 3. Configuració de l'administració de CUPS
+
+Configureu el servei CUPS per:
+
+- Habilitar l'administració del servei.
+
+- Permetre que CUPS escolti les connexions a través de totes les interfícies de xarxa necessàries.
+
+Documenteu els canvis realitzats en la configuració.
+
+Per simular una impressora de xarxa sense necessitat d'adquirir maquinari físic, utilitzarem la impressora virtual **cups-pdf**. Aquesta eina funciona com una impressora convencional, però, en lloc d'imprimir el document en paper, genera un fitxer PDF que es desa al servidor.
+
+### 4. Compartició de la impressora
+
+Utilitzeu:
+
+- El navegador web.
+
+- La interfície web de CUPS.
+
+Configureu la impressora perquè pugui ser **compartida a través de la xarxa**.
+
+### 5. Configuració del client Zorin OS
+
+- Des de la màquina client amb **Zorin OS**, afegiu la impressora compartida pel servidor.
+
+- Comproveu que el client pot localitzar i utilitzar correctament la impressora.
+
+### 6. Proves d'impressió
+
+- Realitzeu proves d'impressió de diversos documents des del client.
+
+- Comproveu que els treballs són enviats correctament al servidor d'impressió.
+
+### 7. Comprovació dels documents generats
+
+- Des del servidor, verifiqueu que s'han generat correctament els fitxers **PDF** corresponents als treballs enviats des del client.
+
+- Documenteu:
+
+  - La ubicació dels fitxers generats.
+  - Els documents creats.
+  - Les proves realitzades.
+
+## Què cal lliurar?
+
+Cal documentar:
+
+- Les comandes utilitzades.
+
+- Els canvis de configuració realitzats.
+
+- Les proves efectuades.
+
+- Les captures de pantalla necessàries per demostrar el correcte funcionament de la prova de concepte.
+
+El format de lliurament serà Markdown, amb una carpeta al repositori indicat pel professorat amb la següent estructura:
+
+```text
+.
+├── README.md
+├── AA2-CUPS.md
+└── images/
+    ├── screenshot1.png
+    └── screenshot2.png
+```
+
+On `README.md` contindrà l'enuciat de l'activitat, `AA2-CUPS.md` serà el fitxer principal amb la descripció de l'activitat i les captures de pantalla es guardaran a la carpeta `images/`.
 
 ## Material de suport
+
+- Material propi del mòdul. [NF1.UD4.A2 Compartició impressores (CUPS)](https://smx-sox.github.io/Materials/NF1_SOX_Linux/UD4_Compart_Recursos/A2-CUPS.html)
+
+- Sarah L. *How to Set Up CUPS Print Server on Ubuntu: The Definitive Guide (2026)*. FOSS Linux, Juny 2026. [enllaç](https://www.fosslinux.com/61850/how-to-set-up-cups-print-server-on-ubuntu.htm)
+
+- P. Ruiz. *Instalar una impresora virtual en Ubuntu 22.04 LTS*. Somebooks.es, Agost 2023. [enllaç](https://somebooks.es/instalar-una-impresora-virtual-en-ubuntu-22-04-lts/)
