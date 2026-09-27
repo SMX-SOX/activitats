@@ -1,67 +1,16 @@
-# NF1.UDx
+# UD4. Compartició de recursos
 
-## Presentació de l'activitat
+## Introducció
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+Com s'ha explicat a la introducció teòrica de la unitat, un servidor Linux ens permetrà compartir recursos amb altres equips de la xarxa. En concret, ens centrarem en la compartició de carpetes (servidor de fitxers) i en la compartició d'impressores (servidor d'impressió) aplicats a un client i les seves necessitats
 
-### Durada de l'activitat
+### El repte: DevOptimize Solutions
 
-La durada prevista de l'activitat és x hores a classe.
+El nostre client, **DevOptimize Solutions**, és una petita *startup* de desenvolupament de programari que treballa exclusivament amb Linux. Fins ara, l'empresa ha estat treballant sense usar un servidor Linux, usant només equips de sobretaula amb Linux, usant serveis de cloud per compartir fitxers i quan calia imprimir, imprimint directament usan un pendrive. Ara l'empresa ha decidit que vol millorar la seva infraestructura i ha contractat els nostres serveis per a la instal·lació d'un servidor Linux que permeti compartir recursos amb tots els equips de l'empresa.
 
-### Objectius específics de l'activitat
+Vosaltres, com a tècnics de sistemes júniors, sereu els encarregats de desplegar i configurar el servidor Linux que permeti compartir recursos amb els equips de l'empresa.
 
-- Objectiu 1
-- Objectiu 2
-- Objectiu 3
+Aquesta repte el dividirem en dues activitats:
 
-### Competències treballades
-
-a) Competència 1
-
-### Resultats d'aprenentatge i criteris d'avaluació
-
-RAx.
-
-### Continguts
-
-### Capacitats clau treballades
-
-- Autonomia
-- Organització del treball
-- Treball en equip
-- Innovació
-- Resolució de problemes
-- Responsabilitat
-- Relació interpersonal
-
-### Semàfor ús de la IA
-
-🟠 Aquesta activitat permet un ús parcial o restringit.
-
-Permès per com a eina de suport en la millora de la redacció dels informes, cerca preliminar d'informació, estructuració d'idees o explicació de conceptes teòrics complexos.
-
-Condicions: Cal processar, entendre i validar sempre els resultats rebuts. Està totalment prohibit copiar l'enunciat d'un exercici directament al xat de la IA i enganxar la resposta generada per al lliurament final sense treball propi ni anàlisi crítica.
-
-## Enunciat de l'activitat
-
-### Requeriments previs
-
-Cal que tingueu un servidor Linux (Ubuntu Server) instal·lat i configurat de l'activitat anterior. Cas que sigui necessari, torneu a desplegar el servidor a partir del fitxer `.OVA` que vau generar.
-
-### Què cal lliurar?
-
-Lliureu la guia d'instal·lació amb les captures i explicacions necessàries a la tasca del Moodle corresponent.
-
-Per a cada apartat de l'activitat, la documentació hauria d'incloure, sempre que sigui necessari:
-
-1. **L'objectiu de l'acció.**
-2. **La comanda o configuració utilitzada.**
-3. **Una explicació del funcionament.**
-4. **Una captura de pantalla del resultat.**
-5. **Una breu conclusió o comprovació**, quan sigui necessari.
-
-> ## 📚 Recordeu
->
-> **«Documentar, documentar i documentar.»**
-
-## Material de suport
+- [A1. Compartició de recursos amb NFS](A1-NFS.md)
+- [A2. Compartició de recursos amb CUPS](A2-CUPS.md)
