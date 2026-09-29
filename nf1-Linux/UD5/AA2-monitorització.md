@@ -23,6 +23,9 @@ RA5. Realitza tasques de monitorització i ús del sistema operatiu en xarxa, de
 - 5.1 Descriu les característiques dels programes de monitoratge.
 - 5.2 Identifica problemes de rendiment en els dispositius d'emmagatzematge.
 - 5.3 Observa l'activitat del sistema operatiu en xarxa a partir de les traces generades pel propi sistema.
+- 5.4 Executar tasques de manteniment del programari del servidor (apt, neteja i gestió de serveis).
+- 5.6 Interpretar la configuració i l'estat de la xarxa del sistema operatiu.
+
 
 ### Continguts
 
@@ -47,9 +50,15 @@ Condicions: Cal processar, entendre i validar sempre els resultats rebuts. Està
 
 ### Requeriments previs
 
-Aquesta activitat es realitzarà en equips de dos-tres membres. Cadascun dels membres de l'equip haurà de tenir accés a un servidor Linux (Ubuntu Server) instal·lat i configurat de l'activitat anterior. Cas que sigui necessari, torneu a desplegar el servidor a partir del fitxer `.OVA` que vau generar.
+Necessiteu el servidor Ubuntu en funcionament i amb el gestor web instal·lat a l'activitat anterior (Cockpit, Webmin o Ajenti).
 
-### Què cal lliurar?
+### Part 1, Característiques de les eines de monitoratge
+
+1. Recol·lecció d'informació del sistema:
+
+   - Executa les comandes `dmidecode`, `lshw` i `lscpu` per obtenir informació del maquinari del sistema. Desa la sortida de les comandes en un fitxer de text.
+
+## Què cal lliurar?
 
 ## Material de suport
 
