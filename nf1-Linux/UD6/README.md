@@ -2,11 +2,20 @@
 
 ## Presentació de l'activitat
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+### El repte: Sistemes Bàsics Consultoria
+
+Com a  tècnics júniors de **EverPia Consulting**, doneu suport als vostres clients, qie no disposen d'un equip d'infraestructura propi, i confien en el vostre servei per mantenir els seus servidors operatius, segurs i actualitzats sense necessitat d'intervenció manual constant.
+
+Fins ara, moltes tasques del dia a dia (comprovacions, altes d'usuaris, còpies de seguretat, neteja de fitxers temporals...) es feien manualment, cosa que consumeix temps i genera errors humans. La direcció de la consultora us encarrega automatitzar aquests processos mitjançant scripting en Bash, per tal de reduir la càrrega operativa de l'equip i oferir un servei més fiable als clients.
+
+Aquest repte es planteja en dues fases:
+
+- **Fase d'aprenentatge**: abans d'atendre cap client, cal que domineu les bases del scripting: control de flux, validació de paràmetres, gestió d'usuaris i grups. Aquests exercicis (Blocs 1 i 2) us serviran per consolidar les competències tècniques que després aplicareu als casos reals.
+- **Fase de resolució de casos reals**: un cop dominades les bases, assumireu peticions reals de clients de la consultora relacionades amb l'automatització de tasques de manteniment (còpies de seguretat, neteja de temporals, control d'espai en disc i planificació amb cron), documentant la solució com si l'haguéssiu de lliurar al client.
 
 ### Durada de l'activitat
 
-La durada prevista de l'activitat és x hores a classe.
+La durada prevista de l'activitat és 8 hores a classe.
 
 ### Objectius específics de l'activitat
 
@@ -16,23 +25,27 @@ La durada prevista de l'activitat és x hores a classe.
 
 ### Competències treballades
 
-a) Competència 1
+h) Mantenir sistemes microinformàtics i xarxes locals, substituint-ne, actualitzant-ne i ajustant-ne els components, per assegurar el rendiment del sistema en condicions de qualitat i seguretat.
+
+n) Mantenir un esperit constant d’innovació i actualització en l’àmbit del sector informàtic.
 
 ### Resultats d'aprenentatge i criteris d'avaluació
 
-RA5.
+RA5. Realitza tasques de monitoratge i ús del sistema operatiu en xarxa, descrivint les eines utilitzades i identificant les principals incidències.
+
+5.5 Executa operacions per a l'automatització de tasques del sistema.
 
 ### Continguts
+
+- Monitoratge i ús del sistema operatiu en xarxa
 
 ### Capacitats clau treballades
 
 - Autonomia
 - Organització del treball
-- Treball en equip
 - Innovació
 - Resolució de problemes
 - Responsabilitat
-- Relació interpersonal
 
 ### Semàfor ús de la IA
 
@@ -126,21 +139,33 @@ Requisits:
     data=$(date +%Y%m%d_%H%M%S)
     nom_backup="backup_${data}.tar.gz"
     ```
+Exercici 3.2: Manteniment del sistema i tasca programada (manteniment_sistema.sh)
+
+Escriu un script de manteniment automàtic integrat amb registres (logs) i preparat per al dimoni cron.
+
+Requisits:
+
+  1. Fitxer de registre: Redirigeix tota la informació generada per l'script afegint-la (>>) al fitxer /var/log/manteniment_sox.log. Cada línia de log ha de començar amb la data i hora actuals (YYYY-MM-DD HH:MM:SS).
+  2. Neteja de fitxers temporals: Esborra els fitxers del directori /tmp que tinguin una antiguitat superior a 7 dies utilitzant la comanda find /tmp -type f -mtime +7 -delete.
+  3. Control d'espai en disc:
+    - Obtén el percentatge d'ús de la partició arrel (/).
+    - Si l'ús és superior al 80%, escriu una línia al log: "[ALERTA] Espai en disc ocupat per sobre del 80% (Ús actual: X%)".
+  4. Planificació: **Afegeix com a comentari (#)** al final de l'script la línia exacta que cal afegir al crontab de root per executar aquest script automàticament cada diumenge a les 02:00 hores.
+
+### Guia de bones pràctiques
+
+- Tots els scripts han d'incloure la línia shebang `#!/bin/bash` i una capçalera amb descripció, autoria i data.
+- Utilitzeu variables en minuscula i snake_case seguint les bones pràctiques descrites a la guia.
 
 ## Què cal lliurar?
 
-Lliureu la guia d'instal·lació amb les captures i explicacions necessàries a la tasca del Moodle corresponent.
-
-Per a cada apartat de l'activitat, la documentació hauria d'incloure, sempre que sigui necessari:
-
-1. **L'objectiu de l'acció.**
-2. **La comanda o configuració utilitzada.**
-3. **Una explicació del funcionament.**
-4. **Una captura de pantalla del resultat.**
-5. **Una breu conclusió o comprovació**, quan sigui necessari.
-
-> ## 📚 Recordeu
->
-> **«Documentar, documentar i documentar.»**
+- Carpeta al repositori amb tots els scripts desenvolupats.
+- Documentació en format Markdown amb la descripció de cada script i mostres de sortida de la seva execució.
 
 ## Material de suport
+
+- C. Alonso. *Guia per a la creació d'scripts*. [Repostori de GitHub](https://github.com/carlesalonso/IntroScripting)
+
+- A. Ahmed. *bash guide*. [Repostori de GitHub](https://github.com/Idnan/bash-guide)
+
+- D. Dovhan. *bash handbook*. [Repostori de GitHub](https://github.com/denysdovhan/bash-handbook)
