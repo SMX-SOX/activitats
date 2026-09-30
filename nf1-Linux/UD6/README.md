@@ -82,10 +82,10 @@ Paràmetres d'entrada:
 Requisits:
 
    1. Comprova que l'script s'executi com a `root`. Si no, mostra un missatge i surt amb codi de retorn 1.
-  2. Valida que s'hagin rebut exactament 2 arguments `$# -ne 2`. En cas contrari, mostra "Ús: ./crea_usuari.sh \<usuari\> \<contrasenya\>" i surt amb codi 2.
-  3. Comprova si l'usuari ja existeix al sistema redirigint tota la sortida i d'errors a /dev/null: `id "$1" &>/dev/null`.
-  4. Si l'usuari ja existeix, mostra "L'usuari \<usuari\> ja existeix al sistema." i surt amb codi 3.
-  5. Si l'usuari no existeix:
+   2. Valida que s'hagin rebut exactament 2 arguments `$# -ne 2`. En cas contrari, mostra "Ús: ./crea_usuari.sh \<usuari\> \<contrasenya\>" i surt amb codi 2.
+   3. Comprova si l'usuari ja existeix al sistema redirigint tota la sortida i d'errors a /dev/null: `id "$1" &>/dev/null`.
+   4. Si l'usuari ja existeix, mostra "L'usuari \<usuari\> ja existeix al sistema." i surt amb codi 3.
+   5. Si l'usuari no existeix:
       - Crea l'usuari amb `useradd -m -s /bin/bash "$1"`.
       - Assigna la contrasenya usant una canonada (pipe) amb `echo "$1:$2" | chpasswd`.
       - Mostra el missatge "Usuari \<usuari\> creat correctament." i surt amb codi 0.
@@ -118,11 +118,11 @@ Paràmetres d'entrada:
 
 Requisits:
 
- 1. Valida que s'hagin entrat els 2 arguments i que el directori origen existeixi.
- 2. Si el directori destí no existeix, crea'l fent servir `mkdir -p`.
- 3. Genera un nom d'arxiu comprimit amb la data i hora actuals utilitzant la comanda `date`:
+  1. Valida que s'hagin entrat els 2 arguments i que el directori origen existeixi.
+  2. Si el directori destí no existeix, crea'l fent servir `mkdir -p`.
+  3. Genera un nom d'arxiu comprimit amb la data i hora actuals utilitzant la comanda `date`:
 
-    ```
+    ```bash
     data=$(date +%Y%m%d_%H%M%S)
     nom_backup="backup_${data}.tar.gz"
     ```
