@@ -63,7 +63,7 @@ Cal que tingueu un servidor Linux (Ubuntu Server) instal·lat i configurat de l'
 
 ### Bloc 1: Scripts Bàsics i Control de Flux
 
-Exercici 1.1: Control d'entorn i valors de retorn (check_root.sh)
+#### Exercici 1.1: Control d'entorn i valors de retorn (check_root.sh)
 
 Dissenya un script anomenat `check_root.sh` per verificar si qui l'executa té permisos suficients al servidor.
 
@@ -83,9 +83,9 @@ Requisits:
   2. Comprova si l'argument és un directori existent `-d`. Si no, mostra per pantalla: "Error: El directori indicat no existeix." i finalitza amb el codi de retorn 2.
   3. Si tot és correcte, calcula l'espai ocupat pel directori amb la comanda `du -sh [directori]` i mostra per pantalla: "L'espai ocupat pel directori [directori] és de [espai] bytes." i finalitza amb el codi de retorn 0.
 
-## Bloc 2: Gestió d'Usuaris i Grups
+### Bloc 2: Gestió d'Usuaris i Grups
 
-Exercici 2.1: Creació d'un usuari amb validacions (crea_usuari.sh)
+#### Exercici 2.1: Creació d'un usuari amb validacions (crea_usuari.sh)
 
 Paràmetres d'entrada:
 
@@ -103,7 +103,7 @@ Requisits:
       - Assigna la contrasenya usant una canonada (pipe) amb `echo "$1:$2" | chpasswd`.
       - Mostra el missatge "Usuari \<usuari\> creat correctament." i surt amb codi 0.
 
-Exercici 2.2: Alta massiva d'usuaris des de fitxer (alta_massiva.sh)
+#### Exercici 2.2: Alta massiva d'usuaris des de fitxer (alta_massiva.sh)
 
 Crea un script anomenat `alta_massiva.sh` per automatitzar la creació de comptes d'usuari a partir d'un fitxer de text.
 
@@ -120,7 +120,7 @@ Requisits:
 
 ### Bloc 3: Automatització d'Accions i Manteniment
 
-Exercici 3.1: Backup automatitzat amb data (backup_servidor.sh)
+#### Exercici 3.1: Backup automatitzat amb data (backup_servidor.sh)
 
 Desenvolupa un script anomenat backup_servidor.sh per realitzar còpies de seguretat de directoris del servidor.
 
@@ -140,7 +140,7 @@ Requisits:
     nom_backup="backup_${data}.tar.gz"
     ```
 
-Exercici 3.2: Manteniment del sistema i tasca programada (manteniment_sistema.sh)
+#### Exercici 3.2: Manteniment del sistema i tasca programada (manteniment_sistema.sh)
 
 Escriu un script de manteniment automàtic integrat amb registres (logs) i preparat per al dimoni cron.
 
@@ -160,6 +160,7 @@ Requisits:
 
 ## Què cal lliurar?
 
+- README.md amb la descripció de l'activitat i les instruccions d'ús dels scripts.
 - Carpeta al repositori amb tots els scripts desenvolupats.
 - Documentació en format Markdown amb la descripció de cada script i mostres de sortida de la seva execució.
 
