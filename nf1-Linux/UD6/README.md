@@ -135,10 +135,10 @@ Requisits:
   2. Si el directori destí no existeix, crea'l fent servir `mkdir -p`.
   3. Genera un nom d'arxiu comprimit amb la data i hora actuals utilitzant la comanda `date`:
 
-  ```bash
-  data=$(date +%Y%m%d_%H%M%S)
-  nom_backup="backup_${data}.tar.gz"
-  ```
+    ```bash
+    data=$(date +%Y%m%d_%H%M%S)
+    nom_backup="backup_${data}.tar.gz"
+    ```
 
 Exercici 3.2: Manteniment del sistema i tasca programada (manteniment_sistema.sh)
 
