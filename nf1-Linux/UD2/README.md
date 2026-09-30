@@ -98,7 +98,7 @@ Documenta amb captures de pantalla i explicacions els següents passos:
 
     ```linux
     127.0.0.1 localhost
-    127.0.1.1 server-abc.sox.text server-abc
+    127.0.1.1 server-abc.sox.test server-abc
     ```
 
    - Comprova quin resultat et mostra la comanda `hostname -f` i explica la diferència amb el resultat de la comanda `hostname`.
