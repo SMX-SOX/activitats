@@ -146,7 +146,7 @@ Escriu un script de manteniment automàtic integrat amb registres (logs) i prepa
 
 Requisits:
 
-  1. Fitxer de registre: Redirigeix tota la informació generada per l'script afegint-la (>>) al fitxer /var/log/manteniment_sox.log. Cada línia de log ha de començar amb la data i hora actuals (YYYY-MM-DD HH:MM:SS).
+  1. Fitxer de registre: Redirigeix tota la informació generada per l'script afegint-la usant el redirector afegir `>>` al fitxer `/var/log/manteniment_sox.log`. Cada línia de log ha de començar amb la data i hora actuals (YYYY-MM-DD HH:MM:SS).
   2. Neteja de fitxers temporals: Esborra els fitxers del directori /tmp que tinguin una antiguitat superior a 7 dies utilitzant la comanda find /tmp -type f -mtime +7 -delete.
   3. Control d'espai en disc:
     - Obtén el percentatge d'ús de la partició arrel (/).
