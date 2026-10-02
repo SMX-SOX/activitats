@@ -114,6 +114,6 @@ Cada alumne ha de lliurar un Dossier Tècnic que inclogui la documentació de to
 
 ## Material de suport
 
-- Material propi del mòdul. [NF1.UD5. Administració avançada](https://smx-sox.github.io/Materials/NF1_SOX_Linux/UD5-Administraci%C3%B3_Avan%C3%A7ada/)
+- Material propi del mòdul. [NF1.UD5. Administració avançada](https://github.com/SMX-SOX/Materials/blob/main/NF1_SOX_Linux/UD5-Administraci%C3%B3_Avan%C3%A7ada/README.md)
 
 - Arsys. [Cron jobs: una Guía Completa](https://www.arsys.es/blog/cron-jobs-una-guia-completa/)

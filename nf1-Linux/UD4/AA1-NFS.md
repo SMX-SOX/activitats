@@ -176,6 +176,6 @@ On `README.md` contindrà l'enunciat de l'activitat, `AA1-NFS.md` serà el fitxe
 
 ## Material de suport
 
-- Material propi del mòdul. [NF1.UD4.A1 Compartició d’arxius i carpetes](https://smx-sox.github.io/Materials/NF1_SOX_Linux/UD4_Compart_Recursos/A1-NFS.html)
+- Material propi del mòdul. [NF1.UD4.A1 Compartició d’arxius i carpetes](https://github.com/SMX-SOX/Materials/blob/main/NF1_SOX_Linux/UD4_Compart_Recursos/A1-NFS.md)
 
 - Ruiz, P. *Capítulo 11: Instalar y configurar NFS en Ubuntu*. Sistemas Operativos en Red (Actualizado). SomeBooks.es, Juny 2022. [enllaç](http://somebooks.es/capitulo-10-instalar-y-configurar-nfs-en-ubuntu-14-04-lts/)

@@ -116,7 +116,7 @@ En primer lloc els membres de l'equip han de compartir les seves experiències a
 
 ## Material de suport
 
-- Material propi del mòdul. [NF1.UD5. Administració avançada](https://smx-sox.github.io/Materials/NF1_SOX_Linux/UD5-Administraci%C3%B3_Avan%C3%A7ada/)
+- Material propi del mòdul. [NF1.UD5. Administració avançada](https://github.com/SMX-SOX/Materials/blob/main/NF1_SOX_Linux/UD5-Administraci%C3%B3_Avan%C3%A7ada/README.md)
 
 - [Webmin](https://www.webmin.com/)
 

@@ -91,6 +91,6 @@ Lliureu la guia d'instal·lació amb les captures i explicacions necessàries a 
 
 ## Material de suport
 
-- [NF1.UD1. Instal·lació Ubuntu Server](https://smx-sox.github.io/Materials/NF1_SOX_Linux/UD1-Instal%C2%B7laci%C3%B3/)
+- [NF1.UD1. Instal·lació Ubuntu Server](https://github.com/SMX-SOX/Materials/blob/main/NF1_SOX_Linux/UD1-Instal%C2%B7laci%C3%B3/README.md)
 
 - [Documentació oficial d'Ubuntu Server](https://ubuntu.com/server/docs)

@@ -150,7 +150,7 @@ On `README.md` contindrà l'enuciat de l'activitat, `AA2-CUPS.md` serà el fitxe
 
 ## Material de suport
 
-- Material propi del mòdul. [NF1.UD4.A2 Compartició impressores (CUPS)](https://smx-sox.github.io/Materials/NF1_SOX_Linux/UD4_Compart_Recursos/A2-CUPS.html)
+- Material propi del mòdul. [NF1.UD4.A2 Compartició impressores (CUPS)](https://github.com/SMX-SOX/Materials/blob/main/NF1_SOX_Linux/UD4_Compart_Recursos/A2-CUPS.md)
 
 - Sarah L. *How to Set Up CUPS Print Server on Ubuntu: The Definitive Guide (2026)*. FOSS Linux, Juny 2026. [enllaç](https://www.fosslinux.com/61850/how-to-set-up-cups-print-server-on-ubuntu.htm)
 

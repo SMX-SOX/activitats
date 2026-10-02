@@ -174,7 +174,7 @@ Per a cada apartat de l'activitat, la documentació hauria d'incloure, sempre qu
 
 ## Material de suport
 
-- [NF1.UD3-Usuaris i grups](https://smx-sox.github.io/Materials/NF1_SOX_Linux/UD3-Usuaris_Grups/)
+- [NF1.UD3-Usuaris i grups](https://github.com/SMX-SOX/Materials/blob/main/NF1_SOX_Linux/UD3-Usuaris_Grups/README.md)
 
 - Ubuntu Server Documentation. [User Management](https://ubuntu.com/server/docs/how-to/security/user-management/)
 
