@@ -204,7 +204,7 @@ Lliureu la guia d'instal·lació amb les captures i explicacions necessàries a 
 
 ## Materials de suport
 
-- [Material de l'assignatura. NF1.UD2. Configuració bàsica servidor GNU/Linux](https://smx-sox.github.io/Materials/NF1_SOX_Linux/UD2-Configuraci%C3%B3/)
+- [Material de l'assignatura. NF1.UD2. Configuració bàsica servidor GNU/Linux](https://https://github.com/SMX-SOX/Materials/blob/main/NF1_SOX_Linux/UD2-Configuraci%C3%B3/README.md)
 
 - G. García, "Hay paquetes pendientes de actualizar: ¿actualizo o no?". Linkedin, setembre 2026.[enllaç a la publicació](https://www.linkedin.com/pulse/hay-paquetes-pendientes-de-actualizar-actualizo-o-garc%C3%ADa-urtiaga-tnkaf/)
 
