@@ -13,4 +13,4 @@ Vosaltres, com a tècnics de sistemes júniors, sereu els encarregats donar les 
 Aquesta repte el dividirem en dues activitats:
 
 - [AA1. Gestors web](AA1-gestors_web.md)
-- [AA2. Monitorització](AA2-monitoritzacio.md)
+- [AA2. Monitorització](AA2-monitorització.md)
