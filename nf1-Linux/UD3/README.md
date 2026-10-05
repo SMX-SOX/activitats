@@ -101,7 +101,7 @@ Cal que tingueu un servidor Linux (Ubuntu Server) instal·lat i configurat de l'
 
     - Revisa el fitxer `/etc/adduser.conf` i assegura't que la shell per defecte per als nous usuaris sigui `/bin/bash` (DSHELL=/bin/bash).
 
-3. Comprovem el funcionament dels canvis creant un un usuari de prova `provaXX`(on XX és el vostre número de llista) amb la comanda `adduser`. Inicia sessió amb aquest usuari i verifica que el seu directori personal conté el fitxer de benvinguda, la carpeta Documents i que l'alias `ll` funciona correctament.
+3. Comprovem el funcionament dels canvis creant un un usuari de prova `provaXX`(on XX és el vostre número de llista) amb la comanda `adduser`. Inicia sessió amb aquest usuari i verifica que el seu directori personal conté el fitxer de benvinguda, la carpeta Documents i que l'alias `ll` funciona correctament. Un cop fetes les comprovacions, tornem a la sessió de l'usuari administrador i eliminem l'usuari de prova amb la comanda `deluser -r provaXX`.
 
 > Si volem aplicar els canvis al nostre usuari ja existent, podem copiar els fitxers del directori `/etc/skel`, cal anar en compte que sobreescriurem els fitxers existents, eliminant configuracions prèvies. Per fer-ho, podem executar les següents comandes:
 >
