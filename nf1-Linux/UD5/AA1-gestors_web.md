@@ -27,7 +27,7 @@ l) Assessorar i assistir al client, canalitzant a un nivell superior els supòsi
 
 ### Resultats d'aprenentatge i criteris d'avaluació
 
-224.RA 5. Realitza tasques de monitorització i ús del sistema operatiu en xarxa, descrivint les eines utilitzades i identificant-ne les principals incidències
+0224.RA 5. Realitza tasques de monitorització i ús del sistema operatiu en xarxa, descrivint les eines utilitzades i identificant-ne les principals incidències
 
 - 5.6 Interpreta la informació de configuració del sistema operatiu en xarxa.
 

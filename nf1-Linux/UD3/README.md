@@ -101,6 +101,15 @@ Cal que tingueu un servidor Linux (Ubuntu Server) instal·lat i configurat de l'
 
     - Revisa el fitxer `/etc/adduser.conf` i assegura't que la shell per defecte per als nous usuaris sigui `/bin/bash` (DSHELL=/bin/bash).
 
+3. Comprovem el funcionament dels canvis creant un un usuari de prova `provaXX`(on XX és el vostre número de llista) amb la comanda `adduser`. Inicia sessió amb aquest usuari i verifica que el seu directori personal conté el fitxer de benvinguda, la carpeta Documents i que l'alias `ll` funciona correctament.
+
+> Si volem aplicar els canvis al nostre usuari ja existent, podem copiar els fitxers del directori `/etc/skel`, cal anar en compte que sobreescriurem els fitxers existents, eliminant configuracions prèvies. Per fer-ho, podem executar les següents comandes:
+>
+>```bash
+> cp -r /etc/skel/. ~
+> source ~/.bashrc
+> ```
+
 ### Tasca 3. Creació i configuració d'usuaris
 
 1. Crea els següents usuaris amb les característiques indicades:
@@ -150,11 +159,11 @@ Hem vist a la tasca 2 com es pot predeterminar el shell pels usuaris nous que es
 
 1. Instal·la el paquet `fish`.
 
-2. Canvia el teu shell per defecte de l'usuari laura_dev a `fish`. Comprova a l'arxiu `/etc/passwd` que el shell s'ha canviat correctament.
+2. Canvia el shell per defecte de l'usuari laura_dev a `fish`. Comprova a l'arxiu `/etc/passwd` que el shell s'ha canviat correctament.
 
 3. Inicia sessió com laura_dev (usant `su - laura_dev`) i comprova que el shell és `fish`.
 
-> 💡`fish` és un shell modern que funciona sense configuració prèvia i que té força avantatges que l'han fet molt popular entre desenvolupadors: autocompletat intel·ligent, comprovació sintaxi en temps real, etc (podeu veure més informació a l'enllaç a Materials de suport). Tot i això, s'ha de tenir en compte que no és compatible amb l'estàndard POSIX, per tant no es recomana mai per la shell de sistema (root) o d'administració.
+> 💡`fish` és un shell modern que funciona sense configuració prèvia i que té força avantatges que l'han fet molt popular entre desenvolupadors: autocompletat intel·ligent, comprovació sintaxi en temps real, etc (podeu veure més informació a l'enllaç a Materials de suport) i amb més detall a la UD5. Tot i això, s'ha de tenir en compte que no és compatible amb l'estàndard POSIX, per tant, scri
 
 ### Què cal lliurar?
 
