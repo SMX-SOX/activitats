@@ -163,7 +163,7 @@ Hem vist a la tasca 2 com es pot predeterminar el shell pels usuaris nous que es
 
 3. Inicia sessió com laura_dev (usant `su - laura_dev`) i comprova que el shell és `fish`.
 
-> 💡`fish` és un shell modern que funciona sense configuració prèvia i que té força avantatges que l'han fet molt popular entre desenvolupadors: autocompletat intel·ligent, comprovació sintaxi en temps real, etc (podeu veure més informació a l'enllaç a Materials de suport) i amb més detall a la UD5. Tot i això, s'ha de tenir en compte que no és compatible amb l'estàndard POSIX, per tant, scri
+> 💡`fish` és un shell modern que funciona sense configuració prèvia i que té força avantatges que l'han fet molt popular entre desenvolupadors: autocompletat intel·ligent, comprovació sintaxi en temps real, etc (podeu veure més informació a l'enllaç a Materials de suport) i amb més detall a la UD6. Tot i això, s'ha de tenir en compte que no és compatible amb l'estàndard POSIX, per tant, scri
 
 ### Què cal lliurar?
 
