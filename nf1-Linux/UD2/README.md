@@ -86,7 +86,7 @@ Documenta amb captures de pantalla i explicacions els següents passos:
 
    - Executa la comanda `hostnamectl` i observa la informació que mostra. Fixa't en el camp `Static hostname`, que és el nom actual de l'equip.
 
-   - Anem a canviar el nom de l'equip (static hostname) amb la comanda `sudo hostnamectl set-hostname nom_equip`. Mostra les captures de pantalla i explica els passos que has seguit. Tria un com a nom sox-\<abc>, on \<abc> són les inicials del teu nom. Així per exemple, si el teu nom és Joan Garcia Martí, el nom de l'equip serà sox-jgm.
+   - Anem a canviar el nom de l'equip (static hostname) amb la comanda `sudo hostnamectl set-hostname nom_equip`. Mostra les captures de pantalla i explica els passos que has seguit. Tria un com a nom `server-<abc>`, on `<abc>` són les inicials del teu nom. Així per exemple, si el teu nom és Joan Garcia Martí, el nom de l'equip serà sox-jgm.
 
    - Canviem el "icon name" o nom descriptiu de l'equip amb la comanda `sudo hostnamectl set-icon-name nom_descriptiu`. Mostra les captures de pantalla i explica els passos que has seguit. Tria un nom descriptiu que representi el teu equip, per exemple "Servidor de Joan Garcia Martí".
 
