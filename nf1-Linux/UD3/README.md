@@ -79,7 +79,7 @@ Cal que tingueu un servidor Linux (Ubuntu Server) instal·lat i configurat de l'
     - sysadmin (per al personal de sistemes)
     - auditor (per a l'usuari auditor extern)
 
-2. Comprova que els grups s'han creat correctament consultant les últimes línies del fitxer `/etc/group`. Identifica clarament el GID de cadascun dels dos grups.
+2. Comprova que els grups s'han creat correctament consultant les últimes línies del fitxer `/etc/group`. Identifica clarament el GID de cadascun dels tres grups.
 
 ### Tasca 2. Gestió dels perfils d'usuari
 
