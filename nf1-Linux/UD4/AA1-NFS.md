@@ -70,9 +70,7 @@ Cal que tingueu un servidor Linux (Ubuntu Server) instal·lat i configurat de l'
 
 ### Fase 1. Preparació de l'entorn
 
-Per preparar aquesta prova de concepte, necessitaràs dues màquines virtuals Linux: tot i que pel servidor podríem fer servir qualsevol distribució, ens decantarem per Ubuntu Server 24.04 LTS per la seva facilitat d'ús i popularitat. Per al client, utilitzarem Zorin OS 18. Els dos equips els configurarem amb dues interfícies de xarxa: una NAT per a l'accés a Internet i una adaptador de xarxa només-amb-amfitrió per a la comunicació entre ells i potencialment, treballar via terminal SSH amb el servidor.
-
-Tots dos equips els instal·larem seguint els requisits recomanats. L'idioma triat serà espanyol (Espanya) i amb l'idioma per defecte en espanyol. En el cas d'Ubuntu Server, seleccionarem la instal·lació del servei SSH durant el procés d'instal·lació per facilitar la gestió remota.
+Per al client, utilitzarem Zorin OS 18 amb configuració de "xarxa NAT". El server tindrem la interfície per treballar amb "xarxa només-amb-amfitrió" i l'altra amb "xarxa NAT". Això ens permetrà que el client tingui accés a Internet i que el servidor pugui comunicar-se amb el client.
 
 Ens assegurarem que ambdues màquines tinguin accés a Internet i que es puguin comunicar entre elles a través de la xarxa només-amb-amfitrió i actualitzarem els sistemes amb les últimes actualitzacions disponibles.
 
@@ -143,34 +141,38 @@ El client necessita que el directori /srv/nfs/admin_tools sigui accessible per l
 
 ## Lliurament de l'activitat
 
-L'activitat en **format Markdown** al repositori de GitHub que s'indiqui per part del professorat. Amb la següent estructura de fitxers:
+L'activitat es pot lliurar de dues maneres:
 
-```text
-.
-├── README.md
-├── AA1-NFS.md
-└── images/
-    ├── screenshot1.png
-    └── screenshot2.png
-```
+- Documentació en **format PDF** amb captures de pantalla i explicacions detallades del procés seguit, incloent les respostes a les preguntes plantejades i la conclusió raonada.
 
-On `README.md` contindrà l'enunciat de l'activitat, `AA1-NFS.md` serà el fitxer principal amb la descripció de l'activitat i les captures de pantalla es guardaran a la carpeta `images/`.
+- Repositori de GitHub. Amb la següent estructura de fitxers:
 
-1. Documenta tot el procés seguint les fases descrites anteriorment. Per les comandes, escriu la comanda com un codi, això et permetrà copiar posteriorment amb facilitat. Per exemple:
+    ```text
+    .
+    ├── README.md
+    ├── AA1-NFS.md
+    └── images/
+        ├── screenshot1.png
+        └── screenshot2.png
+    ```
 
-   ```bash
-   sudo apt update
-   ```
+    On `README.md` contindrà l'enunciat de l'activitat, `AA1-NFS.md` serà el fitxer principal amb la descripció de l'activitat i les captures de pantalla es guardaran a la carpeta `images/`.
 
-2. Inclou captures de pantalla per demostrar el correcte funcionament de la prova de concepte. Per inserir una imatge en Markdown, utilitza la següent sintaxi:
+    1. Documenta tot el procés seguint les fases descrites anteriorment. Per les comandes, escriu la comanda com un codi, això et permetrà copiar posteriorment amb facilitat. Per exemple:
 
-   ```markdown
-   ![Descripció de la imatge](images/nom_de_la_imatge.png)
-   ```
+        ```bash
+        sudo apt update
+        ```
 
-3. Respon les preguntes plantejades en les diferents fases.
+    2. Inclou captures de pantalla per demostrar el correcte funcionament de la prova de concepte. Per inserir una imatge en Markdown, utilitza la següent sintaxi:
 
-4. Redacta una conclusió **raonada** amb les teves recomanacions per al client. Cal plantejar els avantatges de la solució proposada, així com les limitacions i possibles millores futures.
+        ```markdown
+        ![Descripció de la imatge](images/nom_de_la_imatge.png)
+        ```
+
+    3. Respon les preguntes plantejades en les diferents fases.
+
+    4. Redacta una conclusió **raonada** amb les teves recomanacions per al client. Cal plantejar els avantatges de la solució proposada, així com les limitacions i possibles millores futures.
 
 > Nota: Els termes 'redacta' i 'raonada' indiquen clarament que s'espera que escriguis amb les teves pròpies paraules i que aportis un pensament crític al teu treball. Pensa que si les conclusions les redacta directament una IA, ens plantejarem seriosament substiuir-te per ella.
 
