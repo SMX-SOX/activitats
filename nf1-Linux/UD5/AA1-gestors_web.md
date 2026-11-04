@@ -107,11 +107,10 @@ En primer lloc els membres de l'equip han de compartir les seves experiències a
 
 ### Què cal lliurar?
 
-- La feina individual l'heu de penjar a la tasca del Moodle corresponent del mòdul de SOX (pot ser un enllaç al document al vostre repositori de GitHub).
-- Al repositori de lliurament del projecte intermodular, heu de crear una carpeta per l'activitat i a dins incloure els següent elements:
+- Al repositori de lliurament del projecte intermodular, dins la carpeta per l'activitat incloure els següent elements:
 
   - Fitxer README.md amb l'enunciat de l'activitat.
-  - Les guies individuals de cada membre de l'equip. A cada guia ha de constar el nom de l'alumne que ha fet la feina.
+  - Les guies individual de cada membre de l'equip. A cada guia ha de constar el nom de l'alumne que ha fet la feina.
   - Enllaç a la presentació final amb les conclusions de la comparativa i la recomanació final pel client que podeu posar al final del fitxer `README.md`.
 
 ## Material de suport
