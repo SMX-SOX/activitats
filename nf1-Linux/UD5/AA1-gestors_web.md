@@ -1,4 +1,4 @@
-# NF1.UD5.AA1. Administració avançada i monitorització de servidors Linux
+# Administració avançada i monitorització de servidors Linux
 
 ## Presentació de l'activitat
 
