@@ -112,6 +112,8 @@ Necessiteu el servidor Ubuntu en funcionament i amb el gestor web instal·lat a 
 
 Cada alumne ha de lliurar un Dossier Tècnic que inclogui la documentació de totes les parts de l'activitat, amb captures de pantalla i explicacions dels resultats obtinguts.El dossier ha d'estar ben estructurat i redactat.
 
+Aquest dossier estarà en format **Markdown** i es trobarà a la carpeta corresponent a la tasca en el vostre repositori del projecte.
+
 ## Material de suport
 
 - Material propi del mòdul. [NF1.UD5. Administració avançada](https://github.com/SMX-SOX/Materials/blob/main/NF1_SOX_Linux/UD5-Administraci%C3%B3_Avan%C3%A7ada/README.md)
